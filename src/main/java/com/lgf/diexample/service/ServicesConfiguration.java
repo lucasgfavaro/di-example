@@ -26,12 +26,12 @@ public class ServicesConfiguration {
 
     @Bean("serviceAxTemplate")
     public ServiceA ServiceAxTemplate() {
-        return new ServiceA(repositoryAxTemplate, repositoryBxTemplate);
+        return new ServiceA(repositoryAxTemplate, repositoryBxTemplate, new ServiceB(repositoryAxTemplate, repositoryBxTemplate));
     }
 
     @Bean("serviceAyTemplate")
     public ServiceA ServiceAyTemplate() {
-        return new ServiceA(repositoryAyTemplate, repositoryByTemplate);
+        return new ServiceA(repositoryAyTemplate, repositoryByTemplate,new ServiceB(repositoryAyTemplate, repositoryByTemplate));
     }
 
     @Bean("serviceBxTemplate")

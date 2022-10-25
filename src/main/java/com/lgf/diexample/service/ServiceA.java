@@ -11,12 +11,15 @@ public class ServiceA {
     private final String name = "ServiceA";
     private final Repository repositoryA;
     private final Repository repositoryB;
+    private final ServiceB serviceB;
 
     public ServiceA(
             Repository repositoryA,
-            Repository repositoryB) {
+            Repository repositoryB,
+            ServiceB serviceB) {
         this.repositoryA = repositoryA;
         this.repositoryB = repositoryB;
+        this.serviceB = serviceB;
     }
 
     public String getName() {
@@ -38,7 +41,7 @@ public class ServiceA {
                 "name='" + name + '\'' +
                 ", repositoryA=" + repositoryA +
                 ", repositoryB=" + repositoryB +
+                ", serviceB=" + serviceB +
                 '}';
     }
-
 }

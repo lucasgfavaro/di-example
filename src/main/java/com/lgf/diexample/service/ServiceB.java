@@ -8,7 +8,7 @@ import org.slf4j.LoggerFactory;
 public class ServiceB {
 
     private static final Logger log = LoggerFactory.getLogger(ServiceB.class);
-    private final String name = "ServiceA";
+    private final String name = "ServiceB";
     private final Repository repositoryA;
     private final Repository repositoryB;
 
